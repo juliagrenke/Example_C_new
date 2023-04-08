@@ -6,7 +6,6 @@
 Console.WriteLine ("Введите число: ");
 int number = int.Parse (Console.ReadLine()!);
 int count = 2;
-//int remainder = number % 2;
 Console.WriteLine ($"Все четные до {number}:");
 if (number % 2 == 0)
     {
@@ -18,13 +17,12 @@ if (number % 2 == 0)
     } 
 else
 {
-    number = number - 1;
-    //Console.WriteLine ("не содержит четных");   
+    number = number - 1; 
 }
  while (count <= number)
         {
         Console.WriteLine (count);
         count = count + 2;
         }  
-        
+
 
