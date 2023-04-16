@@ -7,7 +7,7 @@ double Dist2D(double xa, double ya, double xb, double yb)
 {
     double dist = Math.Pow(xa - xb, 2) + Math.Pow(ya - yb, 2);
     dist = Math.Sqrt(dist);
-    dist = Math.Round(dist, 2);
+    //dist = Math.Round(dist, 2);
     return dist;
 }
 
@@ -19,4 +19,4 @@ Console.Write("Введите Xb > ");
 double Xb = Convert.ToInt32(Console.ReadLine()!);
 Console.Write("Введите Yb > ");
 double Yb = Convert.ToInt32(Console.ReadLine()!);
-Console.WriteLine("Расстояние между точками = " + Dist2D(Xa, Ya, Xb, Yb));
+Console.WriteLine($"Расстояние между точками = {Dist2D(Xa, Ya, Xb, Yb):f5}"); //вывод числа до 5 знаков после запятой
