@@ -4,7 +4,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53*/
 
 double Dist3D(double xa, double ya, double xb, double yb, double za, double zb)
 {
-    double dist = (xa - xb) * (xa - xb) + (ya - yb) * (ya - yb) + (za - zb)*(za-zb);
+    double dist = (xa - xb) * (xa - xb) + (ya - yb) * (ya - yb) + (za - zb) * (za - zb);
     dist = Math.Sqrt(dist);
     //dist = Math.Round(dist, 2);
     return dist;
